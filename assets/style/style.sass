@@ -1,0 +1,222 @@
+@import fonts
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+a
+    text-decoration: none
+
+.container
+    width: 100%
+    max-width: 1172px/1600px*100%
+    margin: 0 auto
+
+.button
+    justify-self: center
+    width: 200px
+    height: 40px
+    display: flex
+    background-size: contain
+    background-position: right center
+    background-repeat: no-repeat
+    align-items: center
+    justify-items: center
+
+    p
+        +regular
+        font-size: 1em
+        text-transform: uppercase
+        letter-spacing: 3.2px/16px*1em
+        color: rgb(255, 255, 255)
+
+    img
+        margin-left: 12px
+
+.title
+    +russo
+    +regular
+    font-size: 30px/16px*1em
+    text-transform: uppercase
+    color: rgb(255, 255, 255)
+
+.about__text
+    +regular
+    font-size: 1em
+    line-height: 24px/16px*1em
+    color: rgb(255, 255, 255)
+
+body
+    transition-duration: 1s
+    background-color: rgb(42, 54, 59)
+    +roboto
+
+    .header 
+        height: 100vh
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+
+        .container
+            position: relative
+            height: 100%
+            display: grid
+
+            .header__content
+                position: absolute
+                width: 100%
+                display: flex
+                justify-content: space-between
+                height: 100px
+                align-items: center
+
+                .logo
+                    +bold
+                    font-size: 24px/16px*1em
+                    color: rgb(171, 123, 1) 
+
+                .navigation
+
+                    ul
+                        display: flex
+                        justify-content: center
+                        list-style: none
+
+                        li
+                            margin-left: 25px
+                            a
+                                +light
+                                color: rgb(255, 255, 255)
+                                font-size: 18px/16px*1em
+
+                            a:hover 
+                                color: rgb(241, 177, 13)
+
+                        li:first-child
+                            margin-left: 0
+
+                .header__phone
+                    display: grid
+                    grid-template-rows: 60% 40%
+                    text-align: right
+                    height: 100%
+
+
+                    .phone
+                        display: flex
+                        justify-content: space-between
+                        color: rgb(255, 255, 255)
+                        +regular
+                        font-size: 18px/16px*1em
+                        align-self: end
+
+                        .fa
+                            margin-right: 18px
+                            font-size: 18px/16px*1em
+
+                    .call
+                        +light
+                        color: rgb(171, 123, 1)
+                        align-self: center
+                        font-style: 14px/16px*1em
+                        letter-spacing: 0.7
+
+            .header__main
+                display: grid
+                grid-row-gap: 33px
+                width: 100%
+                align-self: center
+                color: rgb(255, 255, 255)
+                grid-template-columns: 542px auto
+                
+                .title__header
+                    grid-area: 1/1/2/3
+                    +russo
+                    +regular
+                    font-size: 48px/16px*1em
+                    text-transform: uppercase
+
+                .about
+                    grid-area: 2/1/3/3
+                    +regular
+                    font-size: 14px/16px*1em
+                    line-height: 20px
+                    color:  rgb(208, 206, 206)
+                    border-left: 3px solid #ab7b01
+                    padding-left: 30px/1172px*100%
+                    height: 60px
+                    display: grid
+                    align-items: center
+
+                .button
+                    grid-area: 3/1/4/2
+                    margin-top: 20px
+    
+    .main
+
+        .section
+            padding-top: 80px
+
+            .section__content
+                display: grid
+                grid-template-rows: auto auto
+                grid-row-gap: 60px
+
+                .section__main
+                    display: grid
+                    grid-template-columns: 50% 50%
+
+                    .about__text__content
+                        display: grid
+                        grid-row-gap: 35px
+                        padding-bottom: 60px
+                        padding-left: 30px
+
+                    .image
+                        display: grid
+                        align-items: end
+                        justify-items: center
+
+                        .border
+                            position: relative 
+                            max-width: 458px
+                            width: 100%
+
+                            img
+                                position: relative
+                                max-width: 100% 
+                                z-index: 2
+                                bottom: 0
+
+                        .border::before
+                            content: ""
+                            z-index: 1
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            top: -30px
+                            left: 30px
+                            border: 2px solid rgb(171, 123, 1)
+                            
+
+ 
+
+                
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
